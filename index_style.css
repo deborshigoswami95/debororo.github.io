@@ -93,3 +93,8 @@ body {
 b {
     font-weight: 900;
 }
+
+#links {
+    display: flex;
+    flex-direction: column;
+}
