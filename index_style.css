@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+:root {
+  --main-bg-color: #E6E6E6;
+  --main-font-color: black;
+  --main-font-family:oxygen;
+  --navbar-base-color: black;
+  --navbar-font-color: white;
+  --navbar-font-family: oxygen;
+  --component-bg-color: grey;
+  --component-font-color: oxygen;
+}
+
+  @media (max-width: 800px) {
+    :root {
+      --main-font-color: grey;
+    }
+  }
+
+
+#navbar {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 60px;
+  width: 100vw;
+  background-color:var(--navbar-base-color);
+  color:var(--navbar-font-color);
+  position:fixed;
+  top:0px;
+  left:0px;
+  font-family: var(--main-font-family)
+}
+
+#navlinks {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#navlinks a{
+  text-decoration: none;
+  color:var(--navbar-font-color);
+  font-family:var(--navbar-font-family);
+  font-size: 18px;
+  margin-right: 15px;
+  padding: 15px 10px 15px 10px;
+  border-radius: 2px;
+}
+
+#navlinks a:hover {
+  @extend #navlinks a;
+  background-color: grey;
+  opacity: 0.8 ;
+
+}
+
+body {
+  /*padding-top: 60px;*/
+  background-color: var(--main-bg-color)
+}
+
+#welcome-section {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+  font-family:var(--main-font-family), sans-serif;
+  height:100vh;
+}
+
+#display-pic {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius:50%;
+}
+
+#display-pic img {
+  height: 300px;
+  margin: 0 0 0 0px;
+}
+
+#bio {
+  width: 500px;
+}
+
+#bio p {
+    line-height: 25px;
+  }
+
+b {
+    font-weight: 900;
+}
