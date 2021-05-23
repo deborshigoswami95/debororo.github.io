@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 
-<link rel="stylesheet" href="cv_style.css">
+<link rel="stylesheet" href="style.css">
 
 
 <html>
   <head>
-    <title>Curriculum Vitae</title>
+    <title>Deborshi's Resume</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
 
   <nav id="navbar">
@@ -27,33 +28,7 @@
       <div id="xp" class="cv-section">
         <h2 id="xp-header">Experience</h2>
         <div id="xp-details">
-          <div id = "xp-1" class="xp-card">
-            <h3 class="company-name">Autodesk</h3>
-            <div class="role">
-              <h4 class="role-title">Senior Data Scientist</h4>
-              <ul class="role-description">
-                <li>Enabled personalized content recommendation for 6 Million website users annually, using predictive model that recommends industry banner tab and product use-cases on Autodesk Home-Page by analyzing user’s prior click-stream behavior</li>
-                <li>Spearheading the development of a recommender engine to match customer’s use-case, expressed in natural language, to the appropriate products</li>
-              </ul>
-            </div>
-            <div class="role">
-              <h4 class="role-title">Data Scientist</h4>
-              <ul class="role-description">
-                <li>Trained and deployed ML model that drives Autodesk Virtual Agent (AVA); the model uses distilBERT to classify natural language queries into relevant customer support functions</li>
-                <li>Reduced error-rate of estimating product-support case resolution times from 3+ days to 1 hr, by building a distributed data pipeline with Spark that runs an estimation algorithm over teraBytes of data</li>
-              </ul>
-            </div>
-          </div>
-          <div id = "xp-2" class="xp-card">
-            <h3 class="company-name">Inference Analytics</h3>
-            <div class="role">
-              <h4 class="role-title">Data Scientist</h4>
-              <ul class="role-description">
-                <li>Automated radiological report summary generation using Attention based Seq2Seq modelling</li>
-                <li>Segmented inbound patients requiring urgent care vs further screening using clustering and topic modeling on radiological reports</li>
-              </ul>
-            </div>
-          </div>
+          <script type="text/javascript" src="xp.js"></script>
         </div>
       </div>
 

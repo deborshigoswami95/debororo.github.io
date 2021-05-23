@@ -1,9 +1,9 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 :root {
   --primary-bg-color: #E6E6E6;
@@ -87,7 +87,7 @@ body {
 #main-div h1 {
   font-family: var(--heading-font-family);
   font-size: 80px;
-  font-weight: 400;
+  font-weight: 100;
   margin-bottom: 0px;
 }
 
@@ -98,13 +98,57 @@ body {
   margin-bottom: 50px;
 }
 
+#quote {
+  font-family: raleway;
+  font-weight: 300;
+}
+
 .cv-section {
   width: 90%;
 }
 
 .xp-card {
-  background-color: var(--card-bg-color);
-  padding: 5px 20px 5px 20px;
-  margin: 10px 5px 10px 5px;
+  background-color: #E6E6E6;
+  padding: 5px 20px 20px 20px;
+  margin: 10px 5px 30px 5px;
   border-radius: 5px;
+}
+
+.company-name {
+  font-family: roboto;
+  font-size: 30px;
+}
+
+.company-location {
+  margin-top: -20px;
+  font-family: raleway;
+}
+
+.role {
+  margin-top: 30px;
+}
+
+.role-title {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.role-date {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  margin-left:10px;
+  margin-top:-15px;
+}
+
+.role-description {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 13px;
+}
+.role-description li {
+  margin-bottom: 10px;
+  margin-left: 0px;
 }
