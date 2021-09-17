@@ -8,16 +8,12 @@
 :root {
   --primary-bg-color: #E6E6E6;
   --primary-font-family:roboto;
-
   --navbar-base-color: black;
   --navbar-font-color: white;
   --navbar-font-family: oxygen;
-
   --heading-font-family: raleway;
-
   --main-bg-color: white;
   --main-font-color: black;
-
   --card-bg-color: #E6E6E6;
 }
 
@@ -84,3 +80,4 @@ body {
     border-radius: 5px;
     color: var(--main-font-color);
   }
+  
