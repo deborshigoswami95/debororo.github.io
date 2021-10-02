@@ -1,9 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500&display=swap');
 
 :root {
   --primary-bg-color: #E6E6E6;
@@ -75,9 +75,64 @@ body {
     flex-direction: column;
     align-items: left;
     padding-left: 10px;
+    padding-bottom: 30px;
     width: 60vw;
-    background-color: var(--main-bg-color);
+    background-color: rgb(53, 53, 53);
     border-radius: 5px;
-    color: var(--main-font-color);
+    font-family: Raleway;
+    font-weight: 200;
+    color: white;
   }
+
+.post-card {
+  display:flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.post-card a {
+  text-decoration: none;
+  margin: 10px 30px 10px 20px;
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+  border-radius: 5px;
+  color: rgb(53, 53, 53);
+}
+
+.post-card a:hover{
+  @extend #post-card a;
+  background-color: rgb(212, 212, 212);
+}
+
+.post-title {
+  @extend #post-card a;
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 5px 0 0 0;
+}
+
+.post-tag {
+  background-color: rgb(184, 0, 0);
+  color: white; 
+  width: max-content;
+  padding: 2px 5px 2px 5px;
+  border-radius: 5px;
+  font-weight: 500;
+}
   
+.post-description {
+  @extend #post-card a;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 10px 0 10px 0;
+}
+
+.post-date {
+  @extend #post-card a;
+  padding: 5px 0 0 0;
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 15px;
+}
